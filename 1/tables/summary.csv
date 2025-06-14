@@ -1,0 +1,4 @@
+solver,gmean_time_s,median_rss_mb,success_%
+clp,0.116,0.086,75.0
+glpk,0.061,0.086,0.0
+highs,0.118,0.086,0.0
