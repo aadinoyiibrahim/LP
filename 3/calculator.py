@@ -11,16 +11,24 @@ def main():
         choices=["add", "subtract", "multiply"],
         help="Operation to perform"
     )
-    parser.add_argument("x", type=float, help="First number")
-    parser.add_argument("y", type=float, help="Second number")
+    parser.add_argument("x", help="First number")
+    parser.add_argument("y", help="Second number")
     args = parser.parse_args()
 
+    # Validate and convert inputs
+    try:
+        x = float(args.x)
+        y = float(args.y)
+    except ValueError:
+        parser.error("Both x and y must be valid numbers")
+
+    # Dispatch to the correct function
     if args.operation == "add":
-        result = add(args.x, args.y)
+        result = add(x, y)
     elif args.operation == "subtract":
-        result = subtract(args.x, args.y)
+        result = subtract(x, y)
     else:
-        result = multiply(args.x, args.y)
+        result = multiply(x, y)
 
     print(f"Result: {args.operation} {args.x} & {args.y} gives {result}")
 
