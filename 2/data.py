@@ -1,4 +1,14 @@
-# data.py
+# data.py   
+
+'''
+this code is part of the tutorial on -- Capacitated Facility-Location MIP with Open-Source Solvers--
+
+author: Abdullahi Ibrahim
+date: May 25, 2025
+
+function:
+ to load data from CSV files containing information about warehouses, customers, and distances
+'''
 import pandas as pd
 from typing import Tuple, Dict, List
 

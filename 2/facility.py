@@ -1,4 +1,16 @@
 # facility.py
+
+
+'''
+this code is part of the tutorial on -- Capacitated Facility-Location MIP with Open-Source Solvers--
+
+author: Abdullahi Ibrahim
+date: May 25, 2025
+
+function:
+    to encapsulate the capacitated facility-location MIP using Pyomo
+'''
+
 from pyomo.environ import (
     ConcreteModel, Set, Param, Var,
     NonNegativeReals, Binary, Constraint,
@@ -18,7 +30,7 @@ class FacilityLocationModel:
         customers_csv: str  = './data/customers.csv',
         distances_csv: str  = './data/distances.csv'
     ):
-        # Load data
+        
         (
             self.W,
             self.C,

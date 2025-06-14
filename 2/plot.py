@@ -1,4 +1,16 @@
 # plot.py
+
+
+'''
+this code is part of the tutorial on -- Capacitated Facility-Location MIP with Open-Source Solvers--
+
+author: Abdullahi Ibrahim
+date: May 25, 2025
+
+function:
+    to load results from benchmark_solvers and plot various performance metrics
+'''
+
 import os
 import matplotlib.pyplot as plt
 import pandas as pd

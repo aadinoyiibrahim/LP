@@ -1,4 +1,18 @@
 # metrics.py
+
+
+'''
+this code is part of the tutorial on -- Capacitated Facility-Location MIP with Open-Source Solvers--
+
+author: Abdullahi Ibrahim
+date: May 25, 2025
+
+function:
+    to benchmark different solvers on the same capacitated facility-location model
+    and record their performance metrics such as solve time, objective value, status,
+    optimality gap, node count, and peak memory usage.
+'''
+
 import time
 import pandas as pd
 import resource
@@ -42,7 +56,6 @@ def benchmark_solvers(
         fl = FacilityLocationModel(warehouses_csv, customers_csv, distances_csv)
         t0 = time.time()
         try:
-            # facility.solve now returns (results, logfile)
             res, logfile = fl.solve(s, time_limit, mip_gap)
 
             # time & memory
@@ -50,11 +63,9 @@ def benchmark_solvers(
             peak_kb = resource.getrusage(resource.RUSAGE_CHILDREN).ru_maxrss
             memory_mb = peak_kb / 1024.0
 
-            # read the solver's text log
             with open(logfile, 'r') as f:
                 log = f.read()
 
-            # parse node count
             if s.lower() == 'cbc':
                 m = re.search(r'Total .*?(\d+)\s+\d+\.\d+%', log)
                 nodes = int(m.group(1)) if m else None
