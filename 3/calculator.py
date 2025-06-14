@@ -4,7 +4,7 @@ from calc import add, subtract, multiply
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Simple CLI Calculator"
+        description="Simple Python Calculator"
     )
     parser.add_argument(
         "operation",
