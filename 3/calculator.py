@@ -3,7 +3,7 @@ import argparse
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Simple CLI Calculator"
+        description="CLI Calculator"
     )
     parser.add_argument(
         "operation",
