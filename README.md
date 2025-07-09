@@ -16,7 +16,7 @@ LP/
 
 - ```2/```: contains the Python code of tutorial on `Capacitated Facility-Location MIP with Open-Source Solvers`
 
-- ```3/```: ...
+- ```3/```: contains the Python code for the tutorial on `Branching and Collaboration with Git & GitHub`
 
 
 # tutorial on `Best Open‑Source Linear Programming Solver`
@@ -40,7 +40,11 @@ This tutorial will test a few open-source solvers on a realistic Mixed-Integer P
 
 GLPK achieves the fastest solve time and lowest memory usage while matching CBC and SCIP in objective solution, optimal status, and zero gap, making it the most efficient choice for the instance considered here.
 
+# tutorial on `Branching and Collaboration with Git & GitHub`
 
+To replicate the code, goto `3\README.md` to see steps on how to run the code. 
+
+This tutorial shows how to use branches to develop different parts of a project, how to open and merge pull requests, and how to safely resolve merge conflicts.
 
 # Observation
 You can create an issue here if there is anything to be addressed.
