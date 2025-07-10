@@ -32,7 +32,7 @@ jobs:
          
 
       - name: Run tests
-        working-directory: ./3
+        working-directory: ./
         env:
           PYTHONPATH: ${{ github.workspace }}/3
         run: |
