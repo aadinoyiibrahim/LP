@@ -39,9 +39,7 @@ jobs:
           echo "Files in repository:"
           ls -R
           # adjust for your test command:
-          cd 3
-          pytest tests/ --maxfail=1 --disable-warnings -q
-          # pytest --maxfail=1 --disable-warnings -q
+          pytest tests/test_calc.py 
 
       - name: Lint code
         run: |
