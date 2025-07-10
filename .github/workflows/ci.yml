@@ -34,6 +34,7 @@ jobs:
       - name: Run tests
         run: |
           # adjust for your test command:
+          cd ./3
           pytest --maxfail=1 --disable-warnings -q
 
       - name: Lint code
