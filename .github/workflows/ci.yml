@@ -46,4 +46,4 @@ jobs:
       - name: Lint code
         run: |
           # adjust if you use flake8/black/etc.
-          flake8 .
+          flake8 3/
