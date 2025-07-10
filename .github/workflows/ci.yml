@@ -32,9 +32,10 @@ jobs:
          
 
       - name: Run tests
+        working-directory: ./3
         run: |
           # adjust for your test command:
-          pytest --maxfail=1 --disable-warnings -q
+          pytest tests/test_calc.py --maxfail=1 --disable-warnings -q
 
       - name: Lint code
         run: |
