@@ -1,3 +1,7 @@
+<!-- Python version -->
+[![Python Version](https://img.shields.io/badge/python-3.7%2B-blue)](https://www.python.org/) [![Maintenance](https://img.shields.io/maintenance/yes/2025.svg)]()
+
+
 # Tutorials on Medium platform
 This repository contains the codes of tutorials posted on [https://medium.com/@abdullahiadinoyi857](https://medium.com/@abdullahiadinoyi857)
 
