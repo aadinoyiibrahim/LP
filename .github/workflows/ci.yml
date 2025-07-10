@@ -34,7 +34,7 @@ jobs:
       - name: Run tests
         run: |
           # adjust for your test command:
-          pytest
+          pytest tests/test_calc.py
 
       - name: Lint code
         run: |
