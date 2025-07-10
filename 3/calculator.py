@@ -2,6 +2,7 @@
 import argparse
 from calc import add, subtract, multiply
 
+
 def main():
     parser = argparse.ArgumentParser(
         description="Simple CLI Calculator"
@@ -42,6 +43,7 @@ def main():
         result = multiply(x, y)
 
     print(f"Result: {args.operation} {args.x} & {args.y} gives {result}")
+
 
 if __name__ == "__main__":
     main()
