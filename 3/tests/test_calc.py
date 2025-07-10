@@ -1,6 +1,7 @@
 import pytest
 from calc import add, subtract, multiply
 
+
 @pytest.mark.parametrize("x,y,expected", [
     (1, 2, 3),
     (0, 0, 0),
