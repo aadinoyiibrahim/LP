@@ -33,6 +33,8 @@ jobs:
 
       - name: Run tests
         working-directory: ./3
+        env:
+          PYTHONPATH: ${{ github.workspace }}/3
         run: |
           echo "Current directory:"
           pwd
