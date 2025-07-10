@@ -34,6 +34,10 @@ jobs:
       - name: Run tests
         working-directory: ./3
         run: |
+          echo "Current directory:"
+          pwd
+          echo "Files in repository:"
+          ls -R
           # adjust for your test command:
           pytest tests/ --maxfail=1 --disable-warnings -q
           # pytest --maxfail=1 --disable-warnings -q
