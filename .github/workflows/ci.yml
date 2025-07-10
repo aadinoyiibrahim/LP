@@ -39,7 +39,7 @@ jobs:
           echo "Files in repository:"
           ls -R
           # adjust for your test command:
-          pytest tests/test_calc.py 
+          pytest tests/test_calc.py -p no:warnings
 
       - name: Lint code
         run: |
