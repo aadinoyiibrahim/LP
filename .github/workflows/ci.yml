@@ -32,7 +32,7 @@ jobs:
          
 
       - name: Run tests
-        working-directory: ./3
+        working-directory: ../3
         run: |
           echo "Current directory:"
           pwd
