@@ -44,6 +44,9 @@ GLPK achieves the fastest solve time and lowest memory usage while matching CBC 
 
 To replicate the code, goto `3\README.md` to see steps on how to run the code. 
 
+To replicate the code, goto `3\README.md` to see steps on how to run the code.
+
+
 This tutorial shows how to use branches to develop different parts of a project, how to open and merge pull requests, and how to safely resolve merge conflicts.
 
 # Observation

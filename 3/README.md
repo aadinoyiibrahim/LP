@@ -15,3 +15,13 @@ You can create an issue here if there is anything to be addressed.
 
 # Contact
 You can reachout here [Abdullahi Adinoyi Ibrahim](https://github.com/aadinoyiibrahim)
+=======
+# Calculator demo
+
+## Usage
+
+```bash
+python calculator.py <operation> <x> <y>
+# operation: add | subtract | multiply
+# x, y: numeric values (floats allowed)
+```
