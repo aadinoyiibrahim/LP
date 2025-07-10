@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: [3.11]
+        python-version: [3.11, 3.12]
 
     steps:
       - name: Check out repository
@@ -32,10 +32,11 @@ jobs:
          
 
       - name: Run tests
+        working-directory: ./3
         run: |
           # adjust for your test command:
-          cd ./3
-          pytest --maxfail=1 --disable-warnings -q
+          pytest tests/ --maxfail=1 --disable-warnings -q
+          # pytest --maxfail=1 --disable-warnings -q
 
       - name: Lint code
         run: |
